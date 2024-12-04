@@ -1,0 +1,1 @@
+$spreadplayers $(center_x) $(center_y) 1 $(radius) true @a[tag=wmbr.player]

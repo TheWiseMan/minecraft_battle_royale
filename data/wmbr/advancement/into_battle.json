@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "id": "iron_sword"
+        },
+        "title": "Into Battle",
+        "description": "All achievements related to the anihilation of your peers.",
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/ice.png"
+    },
+    "criteria": {
+        "default": {
+            "trigger": "impossible"
+        }
+    }
+}

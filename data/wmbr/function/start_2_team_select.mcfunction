@@ -1,0 +1,4 @@
+give @s red_wool[custom_name='["",{"text":"Team Red","italic":false,"color":"#ff0000"}]',lore=['["",{"text":"Drop this to join team RED","italic":false,"color":"yellow"}]']]
+give @s yellow_wool[custom_name='["",{"text":"Team Yellow","italic":false,"color":"#ffff00"}]',lore=['["",{"text":"Drop this to join team YELLOW","italic":false,"color":"yellow"}]']]
+give @s green_wool[custom_name='["",{"text":"Team Green","italic":false,"color":"#00ff00"}]',lore=['["",{"text":"Drop this to join team GREEN","italic":false,"color":"yellow"}]']]
+give @s blue_wool[custom_name='["",{"text":"Team Blue","italic":false,"color":"#0099ff"}]',lore=['["",{"text":"Drop this to join team BLUE","italic":false,"color":"yellow"}]']]
