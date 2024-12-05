@@ -7,6 +7,7 @@ advancement revoke @a[tag=wmbr.player] from minecraft:nether/root
 time set day
 clear @a[tag=wmbr.player]
 gamerule keepInventory true
+gamerule doImmediateRespawn true
 xp set @a[tag=wmbr.player] 0 levels
 xp set @a[tag=wmbr.player] 0 points
 effect clear @a[tag=wmbr.player]

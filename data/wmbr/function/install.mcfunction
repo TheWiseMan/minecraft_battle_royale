@@ -14,6 +14,8 @@ scoreboard objectives add wmbr.select_team_blue minecraft.dropped:blue_wool
 scoreboard objectives add wmbr.select_team_yellow minecraft.dropped:yellow_wool
 
 scoreboard objectives modify wmbr.lives rendertype hearts
+scoreboard objectives modify wmbr.victories displayname [{"text": "Victories"}]
+scoreboard objectives modify wmbr.kills displayname [{"text": "Player Kills"}]
 
 bossbar add wmbr:countdown "Time remaining"
 
@@ -32,8 +34,18 @@ team modify wmbr.yellow prefix ["",{"text": "[", "color": "white"}, {"text": "YE
 team modify wmbr.green prefix ["",{"text": "[", "color": "white"}, {"text": "GRE", "color": "#1eff00"}, {"text": "] ", "color": "white"}]
 team modify wmbr.blue prefix ["",{"text": "[", "color": "white"}, {"text": "BLU", "color": "#008cff"}, {"text": "] ", "color": "white"}]
 
-scoreboard players set prep_time wmbr.config 20
-scoreboard players set kill_time wmbr.config 10
+team modify wmbr.red collisionRule pushOtherTeams
+team modify wmbr.yellow collisionRule pushOtherTeams
+team modify wmbr.green collisionRule pushOtherTeams
+team modify wmbr.blue collisionRule pushOtherTeams
+
+team modify wmbr.red friendlyFire false
+team modify wmbr.yellow friendlyFire false
+team modify wmbr.green friendlyFire false
+team modify wmbr.blue friendlyFire false
+
+scoreboard players set prep_time wmbr.config 1200
+scoreboard players set kill_time wmbr.config 600
 scoreboard players set lives wmbr.config 3
 
 say "WiseMan's Battle Royale installed."

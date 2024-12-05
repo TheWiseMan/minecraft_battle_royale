@@ -1,0 +1,14 @@
+{
+    "display": {
+        "icon": {
+            "id": "totem_of_undying"
+        },
+        "title": "First Time ?",
+        "description": "Die for the first time in Battle Royale",
+        "announce_to_chat": false
+    },
+    "parent": "wmbr:into_battle",
+    "criteria": {
+        "default": {"trigger": "impossible"}
+    }
+}

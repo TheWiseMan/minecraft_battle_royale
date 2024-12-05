@@ -15,6 +15,6 @@ advancement grant @a[tag=wmbr.player] only adventure/root
 
 # countdown
 scoreboard players set wmbr.promise wmbr.timeline 5
-scoreboard players set wmbr.countdown_max wmbr.timeline 1200
-scoreboard players set wmbr.countdown wmbr.timeline 1200
+scoreboard players operation wmbr.countdown_max wmbr.timeline = prep_time wmbr.config
+scoreboard players operation wmbr.countdown wmbr.timeline = prep_time wmbr.config
 function wmbr:macros/countdown_seconds
